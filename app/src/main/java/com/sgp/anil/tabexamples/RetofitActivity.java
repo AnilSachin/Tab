@@ -1,9 +1,9 @@
 package com.sgp.anil.tabexamples;
 
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import com.sgp.anil.tabexamples.adapter.Pager;
@@ -11,8 +11,9 @@ import com.sgp.anil.tabexamples.whatsapp.Call;
 import com.sgp.anil.tabexamples.whatsapp.Chat;
 
 public class RetofitActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
-
-    /**
+      //Anil
+    String  s1="ANIL";
+    /**;
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
      * {@link FragmentPagerAdapter} derivative, which will keep every
@@ -62,14 +63,14 @@ public class RetofitActivity extends AppCompatActivity implements TabLayout.OnTa
     }
 
 
-    private void addItems(ViewPager viewPager){
+    private void addItems(ViewPager viewPager) {
 
         //Creating our pager adapter
         Pager adapter = new Pager(getSupportFragmentManager());
 
-        adapter.addFragment(new Call(),"CALL");
-        adapter.addFragment(new Chat(),"Chat");
-        adapter.addFragment(new Call(),"CONTACT");
+        adapter.addFragment(new Call(), "CALL");
+        adapter.addFragment(new Chat(), "Chat");
+        adapter.addFragment(new Call(), "CONTACT");
 
 
         //Adding adapter to pager
